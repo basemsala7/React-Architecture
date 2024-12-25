@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  padding: 4px 8px;
+  margin: 0;
+}
+body {
+  background-color: #f5f7fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  flex-direction: column;
+  margin: 32px auto;
+  background-color: white;
+  padding: 63px;
+}
+main {
+  background-color: #f7f7f73e;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.form input:not([type="file"]),
+.form button {
+  width: 99%;
+  height: 50px;
+  border-radius: 8px;
+  border: 0.5px solid gray;
+  padding: 8px;
+  font-size: 23px;
+  margin-bottom: 6px;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.427);
+  display: inline-block;
+}
+.form label {
+  margin: 12px 0;
+}
+.form > div {
+  position: relative;
+}
+#eye {
+  position: absolute;
+  top: 27%;
+  right: 20px;
+}
+.form span {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+.form button {
+  background-color: #00aeff;
+  text-align: center;
+  margin-top: 32px;
+  height: 55px;
+  color: white;
+  border: none;
+}

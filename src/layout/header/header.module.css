@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #444;
+}
+.menue {
+  align-self: center;
+}
+.nav {
+  display: none;
+  align-self: center;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav li {
+  float: left;
+  margin-inline: 8px;
+}
+
+.nav li a {
+  display: block;
+  padding: 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: aliceblue;
+  text-decoration: none;
+}
+.nav li a:hover {
+  text-decoration: underline;
+}
+.registrationWrapper {
+  align-self: center;
+  display: none;
+  gap: 8px;
+}
+.registrationWrapper button:nth-child(1) {
+  border: none;
+}
+.registrationWrapper button {
+  padding: 12px 32px;
+  background-color: transparent;
+  border-radius: 32px;
+  border: 1px solid gray;
+  color: white;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: system-ui;
+  text-transform: uppercase;
+}
+.registrationWrapper span {
+  align-self: center;
+  padding: 8px 15px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+}
+.registrationWrapper button:hover {
+  color: black;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  .menue {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+  .registrationWrapper {
+    display: flex;
+  }
+}
